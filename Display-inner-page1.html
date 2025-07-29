@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inner page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.webp" alt="">
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#best-stories">Best stories</a></li>
+                <li><a href="Display.html">Display</a></li>
+                <li><a href="Signup.html">Signup</a></li>
+                <li><a href="SignIn.html">Signin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="display-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-5 mt-5">
+                            <div class="book-display">
+                                <img class="w-100" src="images/books/grid01_64647e2d-8bc9-4a6f-b00d-b5235e021b17.webp"
+                                    alt="">
+                                <div class="d-flex">
+                                    <button class="btn-main m-0 w-50 theme-colour-light text-dark border-dark"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">preview</button><br>
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-center" id="exampleModalLabel">Preview
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <img class="w-100"
+                                                        src="images/books/grid01_64647e2d-8bc9-4a6f-b00d-b5235e021b17.webp"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="btn-main m-0 w-50 theme-colour-light text-dark border-dark">Borrow</button><br>
+                                    <button class="btn-main m-0 w-50 theme-colour-light text-dark border-dark">Read</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mt-5 theme-colour-light">
+                            <div class="book-tab">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active border-dark" id="Overview-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Overview" type="button" role="tab" aria-controls="Overview"
+                                            aria-selected="true">Overview</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link border-dark" id="View-1-Edition-tab" data-bs-toggle="tab"
+                                            data-bs-target="#View-1-Edition" type="button" role="tab"
+                                            aria-controls="View-1-Edition" aria-selected="false">View 1 Edition</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link border-dark" id="Reviews-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Reviews" type="button" role="tab" aria-controls="Reviews"
+                                            aria-selected="false">Reviews</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link border-dark" id="Related-Books-tab" data-bs-toggle="tab"
+                                            data-bs-target="#Related-Books" type="button" role="tab"
+                                            aria-controls="Related-Books" aria-selected="false">Related Books</button>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content pt-3" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="Overview" role="tabpanel"
+                                        aria-labelledby="Overview-tab">
+                                        <div>
+                                            <p class="fst-italic">Astronauts who struggle when the get lost (2005)
+                                            <h3>ASTRONAUTS</h3>
+                                            by <a href="">Anne Mather</a> and <a href="">Robyn Donald</a>
+                                            <p><span><span class="text-warning">★★★★</span> 4.0 (1 rating),</span>
+                                                <span>18 Want to read 4 Currently,</span>
+                                                <span>reading 9 Have read,</span>
+                                            </p>
+                                            <p>This edition doesn't have a description yet. Can you add one?</p>
+                                            <div class="d-flex">
+                                                <div
+                                                    class="bg-white d-flex align-items-center justify-content-center m-2 p-2 fst-italic">
+                                                    Publish Date:<br>April 1, 2005
+                                                </div>
+                                                <div
+                                                    class="bg-white d-flex align-items-center justify-content-center m-2 p-2 fst-italic">
+                                                    Publisher:<br>Harlequin Mills & Boon
+                                                </div>
+                                                <div
+                                                    class="bg-white d-flex align-items-center justify-content-center m-2 p-2 fst-italic">
+                                                    Language:<br>English
+                                                </div>
+                                            </div>
+                                            <p>Previews available in: English</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="View-1-Edition" role="tabpanel"
+                                        aria-labelledby="View-1-Edition-tab">
+                                        <p>This edition doesn't have a previous edition</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="Reviews" role="tabpanel"
+                                        aria-labelledby="Reviews-tab">
+                                        <span><span class="text-warning fs-1">★★★★</span> 4.0 (1 rating),</span>
+                                    </div>
+                                    <div class="tab-pane fade" id="Related-Books" role="tabpanel"
+                                        aria-labelledby="Related-Books-tab">
+                                        <p><a href="#book-list">Click</a>here to see related books</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 book-list" id="book-list">
+                            <div class="row">
+                                <h2 class="mb-3 fst-italic">Suggestions You may Like</h2>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-3">
+                                    <div class="book-list_item theme-colour p-5">
+                                        <img src="images/books/grid04_ab93a54e-4e1c-4c5f-93a4-7b242346cc13.webp" alt="">
+                                        <h5>SECRETS OF PRAYER</h5>
+                                        <p>Bloom books</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="book-list_item theme-colour p-5">
+                                        <img src="images/books/shop04_600x.webp" alt="">
+                                        <h5>SECRETS OF PRAYER</h5>
+                                        <p>Bloom books</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="book-list_item theme-colour p-5">
+                                        <img src="images/books//shop02_600x.webp" alt="">
+                                        <h5>SECRETS OF PRAYER</h5>
+                                        <p>Bloom books</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="book-list_item theme-colour p-5">
+                                        <img src="images/books/shop03_600x.webp" alt="">
+                                        <h5>SECRETS OF PRAYER</h5>
+                                        <p>Bloom books</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-wrapper">
+                    <ul>
+                        <li><a href="#">BEST PRODUCTS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                    </ul>
+                    <ul class="social-icon">
+                        <li class="icon twitter"><a href="#"></a></li>
+                        <li class="icon instagram"><a href="#"></a></li>
+                        <li class="icon facebook"><a href="#"></a></li>
+                        <li class="icon pinterest"><a href="#"></a></li>
+                    </ul>
+                    <hr>
+                    <P>© 2025 dt-bookmax (password: 1) Design Themes</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

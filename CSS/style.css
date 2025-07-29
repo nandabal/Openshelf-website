@@ -9,6 +9,7 @@
 body{
   background-color: #000 !important;
 }
+
 /* -------button----------------- */
 .btn-main {
   padding: 23px;
@@ -24,10 +25,14 @@ body{
   background: #fff;
   color: #000;
   transform: scale(1.05);
+  border: 1px solid #000;
 }
 /* ----------common colours------------- */
 .theme-colour{
 background: #6dad98;
+}
+.theme-colour-light{
+  background: #85f7d2;
 }
 /* -----------header------------------- */
 .header {
@@ -503,4 +508,12 @@ height: 87vh;
 
 .footer_card a{
   color: #5881D0;
+}
+/* -----------------------------------------display inner--------------------------- */
+.display-inner{
+  padding: 50px 0;
+    background: #fff;
+}
+.display-inner .nav-link{
+  color: #000 !important;
 }
