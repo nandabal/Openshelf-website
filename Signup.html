@@ -41,17 +41,29 @@
                     <div class="card">
                         <h2>Signup Form</h2>
                         <div class="login_register">
-                            <a href="Signup.html" class="register highlight" target="blank">Signup</a>
+                            <a href="Signup.html" class="register highlight" >Signup</a>
                             <a href="SignIn.html" class="login" target="blank">Login</a>
                         </div>
-                        <form class="form">
-                            <input type="text" placeholder="User name" class="name">
-                            <input type="email" placeholder="Email Adress" class="email">
-                            <input type="password" placeholder="password" class="pass">
-                            <input type="password" placeholder="Confirm Password" class="confirm_pass">
+                        <form class="form" onsubmit="submitHandler()">
+                            <input type="text" placeholder="User name" class="mb-1" id="name">
+                            <span class="error mb-3" id="name-error"></span>
+                        
+                            <input type="email" placeholder="Email Address" class="mb-1" id="email">
+                            <span class="error mb-3" id="email-error"></span>
+                        
+                            <input type="text" placeholder="Mobile Number" class="mb-1" id="mobile">
+                            <span class="error mb-3" id="mobile-error"></span>
+                        
+                            <input type="password" placeholder="Password" class="mb-1" id="pass">
+                            <span id="pass-strength"></span>
+                            <span class="error mb-3" id="password-error"></span>
+                        
+                            <input type="password" placeholder="Confirm Password" class="mb-1" id="confirm_pass">
+                            <div class="error mb-3" id="confirm-password-error"></div>
+
+                              <a href="#" class="fp">Forgot password?</a>
+                        <button type="submit" class="login_btn" id="signup-btn" disabled>Signup</button>
                         </form>
-                        <a href="#" class="fp">Forgot password?</a>
-                        <button type="submit" class="login_btn">Singup</button>
                     </div>
                 </div>
             </div>
@@ -79,6 +91,7 @@
         </div>
     </footer>
 
+    <script src="JS/main.js"></script>
 </body>
 
 </html>

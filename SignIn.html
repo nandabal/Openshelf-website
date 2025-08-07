@@ -44,12 +44,18 @@
                             <a href="SignIn.html" class="login highlight" target="blank">Login</a>
                             <a href="Signup.html" class="register" target="blank">Signup</a>
                         </div>
-                        <form class="form">
-                            <input type="email" placeholder="Email Adress" class="email">
-                            <input type="password" placeholder="password" class="pass">
+                        <form class="form" onsubmit="submitHandler()">
+                        
+                            <input type="email" placeholder="Email Address" class="mb-1" id="email">
+                            <span class="error mb-3" id="email-error"></span>
+                        
+                            <input type="password" placeholder="Password" class="mb-1" id="pass">
+                            <span id="pass-strength"></span>
+                            <span class="error mb-3" id="password-error"></span>
+                        
+                            <a href="#" class="fp">Forgot password?</a>
+                            <button type="submit" class="login_btn" id="signin-btn" disabled>Login</button>
                         </form>
-                        <a href="#" class="fp">Forgot password?</a>
-                        <button type="button" class="login_btn">Login</button>
                         <div class="footer_card">
                             <p>Not a member?</p>
                             <a href="Signup.html">Singup now</a>
@@ -80,6 +86,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>

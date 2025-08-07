@@ -420,9 +420,6 @@ height: 87vh;
   border-radius: 5px;
   border: 1px solid #DDDDDD;
 }
-.form input.email, .form input.name,.form input.pass,.form input.confirm_pass{
-  margin-bottom: 15px;
-}
 .login_btn{
   font-size: 20px;
   color: white;
@@ -454,3 +451,29 @@ height: 87vh;
 .display-inner .nav-link{
   color: #000 !important;
 }
+
+
+/* --------------validation style--------------- */
+ .error {
+   color: red;
+   margin-top: 4px;
+   font-size: 12px;
+ }
+
+ #strength-msg {
+   font-size: 0.85em;
+   margin-top: 5px;
+ }
+
+ #signin-btn,
+ #signup-btn {
+   opacity: 0.6;
+   cursor: not-allowed;
+ }
+
+ #signin-btn.active,
+ #signup-btn.active {
+   opacity: 1;
+   cursor: pointer;
+   color: white;
+ }
